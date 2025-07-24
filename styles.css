@@ -134,7 +134,7 @@ main {
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,7 +211,7 @@ main {
     text-align: center;
     position: relative;
     overflow: hidden;
-    padding: 6rem 0 2rem;
+    padding: 10rem 0 4rem;
     margin-top: 0;
 }
 
@@ -1115,7 +1115,7 @@ section:nth-child(odd) {
 /* Enhanced Mobile Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: 5rem 0 2rem;
+        padding: 7rem 0 3rem;
         min-height: 90vh;
     }
     
@@ -1217,7 +1217,7 @@ section:nth-child(odd) {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 4rem 0 2rem;
+        padding: 6rem 0 2rem;
         min-height: 85vh;
     }
     
