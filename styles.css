@@ -672,6 +672,17 @@ section:nth-child(odd) {
     bottom: -2rem;
 }
 
+.quote-attribution {
+    display: block;
+    font-size: 1.1rem;
+    color: #d4a574;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Detailed Services */
 .detailed-services {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
@@ -1257,6 +1268,11 @@ section:nth-child(odd) {
     .value-proposition::before,
     .value-proposition::after {
         display: none;
+    }
+    
+    .quote-attribution {
+        text-align: center;
+        font-size: 1rem;
     }
     
     .definition-card {
