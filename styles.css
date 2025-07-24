@@ -211,7 +211,7 @@ main {
     text-align: center;
     position: relative;
     overflow: hidden;
-    padding: 17rem 0 4rem;
+    padding: 20rem 0 4rem;
     margin-top: 0;
 }
 
@@ -393,7 +393,7 @@ section:nth-child(odd) {
     border-radius: 20px;
     padding: 3rem;
     margin-bottom: 4rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
