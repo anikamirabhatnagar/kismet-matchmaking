@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -18,10 +19,18 @@ body {
     scroll-behavior: smooth;
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 body.loaded {
     opacity: 1;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    padding-top: 0;
 }
 
 /* Enhanced animations */
@@ -107,6 +116,8 @@ body.loaded {
 .navigation {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
@@ -200,7 +211,8 @@ body.loaded {
     text-align: center;
     position: relative;
     overflow: hidden;
-    padding: 2rem 0;
+    padding: 6rem 0 2rem;
+    margin-top: 0;
 }
 
 .hero::before {
@@ -336,6 +348,10 @@ body.loaded {
 section {
     padding: 8rem 0;
     position: relative;
+}
+
+section:first-of-type {
+    padding-top: 0;
 }
 
 section:nth-child(even) {
@@ -1099,7 +1115,7 @@ section:nth-child(odd) {
 /* Enhanced Mobile Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: 4rem 0 2rem;
+        padding: 5rem 0 2rem;
         min-height: 90vh;
     }
     
@@ -1201,7 +1217,7 @@ section:nth-child(odd) {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 3rem 0 2rem;
+        padding: 4rem 0 2rem;
         min-height: 85vh;
     }
     

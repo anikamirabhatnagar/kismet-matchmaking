@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    const offsetTop = target.offsetTop - 80;
+                    const navHeight = navigation.offsetHeight;
+                    const offsetTop = target.offsetTop - navHeight - 20;
                     window.scrollTo({
-                        top: offsetTop,
+                        top: Math.max(0, offsetTop),
                         behavior: 'smooth'
                     });
                 }
@@ -104,9 +105,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Loading animation
+    // Loading animation and initial positioning
     window.addEventListener('load', function() {
         document.body.classList.add('loaded');
+        
+        // Ensure proper initial scroll position
+        if (window.location.hash) {
+            setTimeout(() => {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    const navHeight = navigation.offsetHeight;
+                    const offsetTop = target.offsetTop - navHeight - 20;
+                    window.scrollTo({
+                        top: Math.max(0, offsetTop),
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        }
     });
 });
 
