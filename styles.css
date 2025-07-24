@@ -211,7 +211,7 @@ main {
     text-align: center;
     position: relative;
     overflow: hidden;
-    padding: 15rem 0 4rem;
+    padding: 17rem 0 4rem;
     margin-top: 0;
 }
 
@@ -393,7 +393,7 @@ section:nth-child(odd) {
     border-radius: 20px;
     padding: 3rem;
     margin-bottom: 4rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -1116,8 +1116,12 @@ section:nth-child(odd) {
 /* Enhanced Mobile Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: 10rem 0 3rem;
+        padding: 12rem 0 3rem;
         min-height: 90vh;
+    }
+    
+    .definition-card {
+        margin-top: 4rem;
     }
     
     .hero-title {
@@ -1218,8 +1222,12 @@ section:nth-child(odd) {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 9rem 0 2rem;
+        padding: 11rem 0 2rem;
         min-height: 85vh;
+    }
+    
+    .definition-card {
+        margin-top: 3rem;
     }
     
     .hero-title {
