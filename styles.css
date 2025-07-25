@@ -59,7 +59,7 @@ main {
 
 /* Navigation */
 .navigation {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -130,7 +130,7 @@ main {
     text-align: center;
     position: relative;
     overflow: hidden;
-    padding: 8rem 0 3rem;
+    padding: 4rem 0 3rem;
     margin-top: 0;
 }
 
