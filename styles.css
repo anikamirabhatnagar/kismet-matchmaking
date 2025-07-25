@@ -400,7 +400,7 @@ section:nth-child(odd) {
 
 .approach-image {
     margin-bottom: 2.5rem;
-    height: 280px;
+    height: 320px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -416,21 +416,21 @@ section:nth-child(odd) {
 
 .image-placeholder.sunset {
     background-image: url('kismet1.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .image-placeholder.professional {
     background-image: url('kismet2.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .image-placeholder.network {
     background-image: url('kismet3.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -1126,7 +1126,7 @@ section:nth-child(odd) {
     }
     
     .approach-image {
-        height: 240px;
+        height: 280px;
     }
     
     .blog-image {
@@ -1210,7 +1210,7 @@ section:nth-child(odd) {
     }
     
     .approach-image {
-        height: 200px;
+        height: 250px;
     }
     
     .blog-image {
