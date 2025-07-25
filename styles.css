@@ -544,15 +544,24 @@ section:nth-child(odd) {
 }
 
 .image-placeholder.sunset {
-    background: linear-gradient(135deg, #ff7b54 0%, #ff6b35 50%, #f7931e 100%);
+    background-image: url('kismet1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .image-placeholder.professional {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('kismet2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .image-placeholder.network {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background-image: url('kismet3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .approach-item h3 {
