@@ -123,14 +123,14 @@ main {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
     overflow: hidden;
-    padding: 20rem 0 4rem;
+    padding: 8rem 0 3rem;
     margin-top: 0;
 }
 
@@ -273,7 +273,7 @@ main {
 
 /* Sections */
 section {
-    padding: 8rem 0;
+    padding: 4rem 0;
     position: relative;
 }
 
@@ -291,11 +291,11 @@ section:nth-child(odd) {
 
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     letter-spacing: -0.01em;
     position: relative;
     padding-bottom: 1rem;
@@ -318,9 +318,9 @@ section:nth-child(odd) {
     background: rgba(212, 165, 116, 0.05);
     border: 2px solid rgba(212, 165, 116, 0.3);
     border-radius: 20px;
-    padding: 3rem;
-    margin-bottom: 4rem;
-    margin-top: 6rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -357,7 +357,7 @@ section:nth-child(odd) {
 /* Matchmaking Approach */
 .matchmaking-approach {
     background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
-    padding: 8rem 0;
+    padding: 4rem 0;
     position: relative;
 }
 
@@ -373,34 +373,34 @@ section:nth-child(odd) {
 }
 
 .approach-intro {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #5a6c7d;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .approach-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 5rem;
-    margin-top: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
 }
 
 .approach-item {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .approach-image {
-    margin-bottom: 2.5rem;
-    height: 320px;
+    margin-bottom: 1.5rem;
+    height: 260px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -566,7 +566,7 @@ section:nth-child(odd) {
 /* Detailed Services */
 .detailed-services {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
-    padding: 8rem 0;
+    padding: 4rem 0;
     position: relative;
 }
 
@@ -614,7 +614,7 @@ section:nth-child(odd) {
 
 .service-category {
     background: rgba(255, 255, 255, 0.95);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(212, 165, 116, 0.1);
@@ -676,9 +676,9 @@ section:nth-child(odd) {
 .privacy-security,
 .process-details {
     background: rgba(255, 255, 255, 0.95);
-    padding: 3.5rem;
+    padding: 2rem;
     border-radius: 20px;
-    margin: 4rem 0;
+    margin: 2rem 0;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(212, 165, 116, 0.1);
     position: relative;
@@ -819,7 +819,7 @@ section:nth-child(odd) {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
     color: white;
     text-align: center;
-    padding: 8rem 0;
+    padding: 5rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -1015,12 +1015,12 @@ section:nth-child(odd) {
 /* Enhanced Mobile Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: 12rem 0 3rem;
-        min-height: 90vh;
+        padding: 6rem 0 2rem;
+        min-height: 60vh;
     }
     
     .definition-card {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
     
     .founder-content {
@@ -1126,7 +1126,7 @@ section:nth-child(odd) {
     }
     
     .approach-image {
-        height: 280px;
+        height: 220px;
     }
     
     .blog-image {
@@ -1134,25 +1134,25 @@ section:nth-child(odd) {
     }
     
     section {
-        padding: 6rem 0;
+        padding: 3rem 0;
     }
     
     .matchmaking-approach,
     .detailed-services,
     .blog-previews,
     .cta-section {
-        padding: 6rem 0;
+        padding: 3rem 0;
     }
 }
 
 @media (max-width: 480px) {
     .hero {
-        padding: 11rem 0 2rem;
-        min-height: 85vh;
+        padding: 5rem 0 2rem;
+        min-height: 50vh;
     }
     
     .definition-card {
-        margin-top: 3rem;
+        margin-top: 1.5rem;
     }
     
     .mala-photo {
@@ -1194,14 +1194,14 @@ section:nth-child(odd) {
     }
     
     section {
-        padding: 4rem 0;
+        padding: 2.5rem 0;
     }
     
     .matchmaking-approach,
     .detailed-services,
     .blog-previews,
     .cta-section {
-        padding: 4rem 0;
+        padding: 2.5rem 0;
     }
     
     .approach-grid,
@@ -1210,7 +1210,7 @@ section:nth-child(odd) {
     }
     
     .approach-image {
-        height: 250px;
+        height: 200px;
     }
     
     .blog-image {
