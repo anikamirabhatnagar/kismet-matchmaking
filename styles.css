@@ -174,34 +174,24 @@ main {
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 400;
     color: white;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em;
     line-height: 1.1;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.expert-text {
-    color: #d4a574;
-    font-weight: 400;
-}
-
-.hero-subtitle {
-    font-size: 1.3rem;
+.hero-definition {
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-weight: 300;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-journey {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 2.5rem;
+    max-width: 600px;
+    line-height: 1.5;
     font-style: italic;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -231,6 +221,11 @@ main {
 
 .cta-button.primary:hover {
     background: #c19660;
+}
+
+.cta-button.small {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
 }
 
 .cta-button.secondary {
@@ -308,51 +303,6 @@ section:nth-child(odd) {
     border-radius: 2px;
 }
 
-/* Definition Section */
-.definition-section {
-    padding: 4rem 0;
-    background: #ffffff;
-}
-
-/* Definition Card */
-.definition-card {
-    background: rgba(212, 165, 116, 0.05);
-    border: 2px solid rgba(212, 165, 116, 0.2);
-    border-radius: 20px;
-    padding: 2.5rem;
-    margin: 0 auto;
-    max-width: 700px;
-    box-shadow: 0 10px 40px rgba(212, 165, 116, 0.1);
-    text-align: center;
-}
-
-.definition-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.pronunciation {
-    font-size: 1rem;
-    color: #d4a574;
-    font-weight: 400;
-}
-
-.phonetic {
-    font-size: 1.1rem;
-    color: #5a6c7d;
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.definition {
-    font-size: 1.1rem;
-    color: #2c3e50;
-    line-height: 1.6;
-    font-weight: 400;
-}
 
 /* Matchmaking Approach */
 /* Dating Reality Section */
