@@ -27,10 +27,12 @@
         <section class="hero">
             <div class="hero-video-background">
                 <video autoplay muted loop playsinline class="hero-bg-video">
-                    <source src="kismet-hero-video.mov" type="video/quicktime">
-                    <source src="img2.jpg" type="image/jpeg">
-                    <!-- Fallback image for browsers that don't support video -->
+                    <source src="https://res.cloudinary.com/dcrmc5vzc/video/upload/f_mp4,q_auto:low/kismet_sample_video_azcznv.mp4" type="video/mp4">
+                    <source src="https://res.cloudinary.com/dcrmc5vzc/video/upload/f_webm,q_auto:low/kismet_sample_video_azcznv.webm" type="video/webm">
+                    <source src="https://res.cloudinary.com/dcrmc5vzc/video/upload/v1753986051/kismet_sample_video_azcznv.mov" type="video/quicktime">
+                    <!-- Fallback image if video fails -->
                 </video>
+                <img src="img2.jpg" alt="Hero background" class="hero-bg-video" style="display: none;" onload="if(!this.previousElementSibling.videoWidth) this.style.display='block'">
                 <div class="video-overlay"></div>
             </div>
             <div class="hero-content">
