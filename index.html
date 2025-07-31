@@ -25,8 +25,13 @@
 
     <main>
         <section class="hero">
-            <div class="hero-background-image">
-                <img src="img2.jpg" alt="Beautiful mountain landscape" class="hero-bg-img">
+            <div class="hero-video-background">
+                <video autoplay muted loop playsinline class="hero-bg-video">
+                    <source src="kismet-hero-video.mov" type="video/quicktime">
+                    <source src="img2.jpg" type="image/jpeg">
+                    <!-- Fallback image for browsers that don't support video -->
+                </video>
+                <div class="video-overlay"></div>
             </div>
             <div class="hero-content">
                 <div class="definition-card">
