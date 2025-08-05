@@ -151,7 +151,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 1;
 }
 
 .video-overlay {
@@ -160,7 +160,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
+    background: transparent;
     z-index: 2;
 }
 
@@ -174,34 +174,24 @@ main {
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 400;
     color: white;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em;
     line-height: 1.1;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.expert-text {
-    color: #d4a574;
-    font-weight: 400;
-}
-
-.hero-subtitle {
-    font-size: 1.3rem;
+.hero-definition {
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-weight: 300;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-journey {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 2.5rem;
+    max-width: 600px;
+    line-height: 1.5;
     font-style: italic;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -231,6 +221,11 @@ main {
 
 .cta-button.primary:hover {
     background: #c19660;
+}
+
+.cta-button.small {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
 }
 
 .cta-button.secondary {
@@ -308,50 +303,6 @@ section:nth-child(odd) {
     border-radius: 2px;
 }
 
-/* Definition Card */
-.definition-card {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-.definition-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 0.5rem;
-    font-weight: 400;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.pronunciation {
-    font-size: 0.9rem;
-    color: #d4a574;
-    font-weight: 400;
-}
-
-.phonetic {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    font-style: italic;
-    margin-bottom: 1rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.definition {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
 
 /* Matchmaking Approach */
 /* Dating Reality Section */
