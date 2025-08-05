@@ -265,62 +265,65 @@ main {
 section.definition-card {
     background: linear-gradient(135deg, #fff9f3 0%, #fef7f0 50%, #fff9f3 100%) !important;
     padding: 3rem 0 !important;
-    border: 1px solid #f8e6d3;
+    border: 1px solid #d4a574;
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
     position: relative;
-    box-shadow: 0 10px 30px rgba(212, 165, 116, 0.1);
+    box-shadow: 0 10px 30px rgba(212, 165, 116, 0.15);
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
 }
 
-.definition-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(212, 165, 116, 0.05) 0%, transparent 70%);
-    pointer-events: none;
-}
-
 .definition-content {
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 2rem;
     position: relative;
     z-index: 2;
 }
 
-.definition-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.1em;
-    position: relative;
+.word-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.definition-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(135deg, #d4a574 0%, #c19660 100%);
-    border-radius: 2px;
+.definition-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #2c3e50;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.word-type {
+    font-size: 1.2rem;
+    color: #d4a574;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.pronunciation {
+    font-size: 1.3rem;
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .definition-text {
-    font-size: 1.4rem;
-    color: #5a6c7d;
+    font-size: 1.5rem;
+    color: #2c3e50;
     line-height: 1.6;
-    font-style: italic;
     font-weight: 400;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -1184,8 +1187,21 @@ section:nth-child(odd) {
         margin-bottom: 3rem;
     }
     
-    .definition-card h2 {
-        font-size: 1.8rem;
+    .definition-title {
+        font-size: 2.5rem;
+    }
+    
+    .word-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .pronunciation {
+        font-size: 1.1rem;
+    }
+    
+    .definition-text {
+        font-size: 1.2rem;
     }
     
     .comparison-card,
@@ -1305,8 +1321,16 @@ section:nth-child(odd) {
         padding: 1.5rem;
     }
     
-    .definition-card h2 {
-        font-size: 1.6rem;
+    .definition-title {
+        font-size: 2rem;
+    }
+    
+    .pronunciation {
+        font-size: 1rem;
+    }
+    
+    .definition-text {
+        font-size: 1.1rem;
     }
     
     .phonetic {
