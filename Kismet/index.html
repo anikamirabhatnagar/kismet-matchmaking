@@ -27,23 +27,28 @@
         <section class="hero">
             <div class="hero-video-background">
                 <video autoplay muted loop playsinline class="hero-bg-video">
-                    <source src="kismet-hero-video.mov" type="video/quicktime">
-                    <!-- Fallback to existing image -->
+                    <source src="https://res.cloudinary.com/dcrmc5vzc/video/upload/f_mp4,q_auto:low/kismet_sample_video_azcznv.mp4" type="video/mp4">
+                    <source src="https://res.cloudinary.com/dcrmc5vzc/video/upload/f_webm,q_auto:low/kismet_sample_video_azcznv.webm" type="video/webm">
+                    <source src="https://res.cloudinary.com/dcrmc5vzc/video/upload/v1753986051/kismet_sample_video_azcznv.mov" type="video/quicktime">
+                    <!-- Fallback image if video fails -->
                 </video>
-                <img src="img2.jpg" alt="Hero background" class="hero-bg-video" style="display: none;">
+                <img src="img2.jpg" alt="Hero background" class="hero-bg-video" style="display: none;" onload="if(!this.previousElementSibling.videoWidth) this.style.display='block'">
                 <div class="video-overlay"></div>
             </div>
             <div class="hero-content">
-                <div class="definition-card">
-                    <h3>kismet <span class="pronunciation">[noun]</span></h3>
-                    <p class="phonetic">kis·met ˈkiz-ˌmet -mət</p>
-                    <p class="definition">a hypothetical force or personified power that determines the course of the future events: FATE, DESTINY</p>
-                </div>
-                <h1 class="hero-title">Finding Love Through <span class="expert-text">Expert</span> Matchmaking</h1>
-                <p class="hero-subtitle">We connect highly-qualified and compatible individuals through a personalized matchmaking service.</p>
-                <p class="hero-journey">Your journey to a meaningful connection starts here.</p>
+                <h1 class="hero-title">KISMET</h1>
+                <p class="hero-definition">a hypothetical force or personified power that determines the course of the future events: FATE, DESTINY</p>
                 <div class="hero-buttons">
-                    <button class="cta-button primary" onclick="window.open('https://docs.google.com/forms/d/1uelTDzfNpzE5axADh90TwmAs3PWkDsUUjUpzAipQ-7g/viewform', '_blank')">Start Matchmaking</button>
+                    <button class="cta-button primary small" onclick="window.open('https://docs.google.com/forms/d/1uelTDzfNpzE5axADh90TwmAs3PWkDsUUjUpzAipQ-7g/viewform', '_blank')">Find Your Match</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="definition-card">
+            <div class="container">
+                <div class="definition-content">
+                    <h2 class="definition-title">KISMET</h2>
+                    <p class="definition-text">a hypothetical force or personified power that determines the course of the future events: FATE, DESTINY</p>
                 </div>
             </div>
         </section>
