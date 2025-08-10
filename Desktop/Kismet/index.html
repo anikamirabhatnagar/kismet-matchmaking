@@ -12,12 +12,14 @@
     <nav class="navigation">
         <div class="nav-container">
             <div class="logo">
-                <img src="logo.png" alt="Kismet Matchmaking Logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Kismet Matchmaking Logo">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -46,7 +48,7 @@
                         <p class="definition-text">a hypothetical force or personified power that determines the course of the future events: FATE, DESTINY</p>
                     </div>
                     <div class="hero-buttons">
-                        <button class="cta-button primary small" onclick="window.open('https://docs.google.com/forms/d/1uelTDzfNpzE5axADh90TwmAs3PWkDsUUjUpzAipQ-7g/viewform', '_blank')">Find Your Match</button>
+                        <button class="cta-button tertiary small" onclick="window.open('https://docs.google.com/forms/d/1uelTDzfNpzE5axADh90TwmAs3PWkDsUUjUpzAipQ-7g/viewform', '_blank')">Find Your Match</button>
                     </div>
                 </div>
             </div>
@@ -130,7 +132,7 @@
 
         <section class="professional-services-hero">
             <div class="professional-services-content">
-                <h2 class="professional-services-title">Professional Matchmaking and Relationship Advice</h2>
+                <h2 class="professional-services-title">Our Approach</h2>
             </div>
         </section>
 
@@ -141,9 +143,9 @@
                         <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Thoughtful connection and meaningful relationships">
                     </div>
                     <div class="approach-text">
-                        <h2>Our Approach</h2>
+                        <h2>Professional Matchmaking</h2>
                         <p>We're living in a time where dating apps, algorithms, and filtered realities have reshaped how we connect. Swiping replaced serendipity. Performative small talk replaced genuine curiosity. In a world of endless options, many of us are left feeling lonelier than ever.</p>
-                        <p>The result? A generation that's <strong>craving intimacy</strong> — but burnt out on the means to find it.</p>
+                        <p>The result? A generation that's craving intimacy but burnt out on the means to find it.</p>
                         <p>Our tailored approach helps you find a partner who genuinely aligns with your values, preferences, and long-term relationship goals. We ensure every client is ready for a committed relationship, because clarity and commitment are the foundations of a successful matchmaking journey.</p>
                     </div>
                 </div>
@@ -154,20 +156,35 @@
             <div class="container">
                 <div class="services-content">
                     <div class="services-text">
-                        <h2>Real Connection</h2>
+                        <h2>Relationship Guidance</h2>
                         <p>Our matchmaking philosophy emphasises the importance of assessing your readiness for commitment and clarifying your vision of an ideal partner. This involves introspection about your personal goals, emotional readiness, and the qualities that truly matter to you.</p>
                         <div class="services-list">
-                            <div class="service-item-new">
-                                <strong>Professional Profile Creation</strong>
-                                <p>Crafting a compelling, authentic profile that reflects who you are and what you're looking for</p>
+                            <div class="service-item-new dropdown-item">
+                                <div class="service-header" onclick="toggleDropdown(this)">
+                                    <strong>Professional Profile Creation</strong>
+                                    <span class="dropdown-arrow">+</span>
+                                </div>
+                                <div class="service-content">
+                                    <p>Crafting a compelling, authentic profile that reflects who you are and what you're looking for.</p>
+                                </div>
                             </div>
-                            <div class="service-item-new">
-                                <strong>Personalized Date Planning</strong>
-                                <p>Thoughtfully curated dates tailored to your preferences and lifestyle</p>
+                            <div class="service-item-new dropdown-item">
+                                <div class="service-header" onclick="toggleDropdown(this)">
+                                    <strong>Personalized Date Planning</strong>
+                                    <span class="dropdown-arrow">+</span>
+                                </div>
+                                <div class="service-content">
+                                    <p>Thoughtfully curated dates tailored to your preferences and lifestyle.</p>
+                                </div>
                             </div>
-                            <div class="service-item-new">
-                                <strong>Relationship & Dating Coaching</strong>
-                                <p>One-on-one sessions to build confidence, improve communication, and clarify your relationship goals</p>
+                            <div class="service-item-new dropdown-item">
+                                <div class="service-header" onclick="toggleDropdown(this)">
+                                    <strong>Relationship & Dating Coaching</strong>
+                                    <span class="dropdown-arrow">+</span>
+                                </div>
+                                <div class="service-content">
+                                    <p>One-on-one sessions to build confidence, improve communication, and clarify your relationship goals.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -178,102 +195,27 @@
             </div>
         </section>
 
-        <section class="our-story">
+        <section class="application-section">
             <div class="container">
-                <h2 class="section-title">Our Story</h2>
-                <div class="story-content">
-                    <p>
-                        Kismet is founded by Mala in response to the growing need for intentional, relationship-focused matchmaking in today's world. We are focused on bringing back meaningful, intentional matchmaking in a world where genuine connection is increasingly rare.
-                    </p>
-                    
-                    <div class="name-story">
-                        <h3>Why We Chose the Name 'Kismet'</h3>
-                        <p>
-                            Kismet represents the beautiful belief that some connections are meant to be - 
-                            that fate and destiny play a role in bringing the right people together at the right time.
-                        </p>
+                <div class="application-content">
+                    <div class="application-image">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80" alt="Application process and consultation">
                     </div>
-
-                    <div class="founder-story">
-                        <div class="founder-content">
-                            <div class="founder-image">
-                                <img src="img1.jpg" alt="Mala, Founder of Kismet Matchmaking" class="mala-photo">
-                            </div>
-                            <div class="founder-text">
-                                <h3>Meet Mala - The Heart and Soul Behind Kismet</h3>
-                                <p>
-                                    Mala is a natural "people person" and "the connector" who has spent over 30 years 
-                                    in the US building trusted networks within the South Asian community. Her authentic, 
-                                    honest, caring, and sincere approach has helped countless individuals find meaningful 
-                                    connections.
-                                </p>
-                                <p class="mission-statement">
-                                    Our mission is simple: to help you find your person through intentional, committed relationships that honor compatibility, core values, love and understanding.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="application-text">
+                        <h2>Our Application Process</h2>
+                        <p>Our intake process includes a full assessment of your goals, personality traits, and preferences. We consider everything from lifestyle and hobbies to career goals and values, forming a complete picture of who you are, so we can match you accordingly.</p>
+                        <p>Unlike services that focus on quantity or limit clients to a certain time frame, Kismet stays with you as long as you're single and seeking love. You're never just a number in our system.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="blog-previews">
-            <div class="container">
-                <h2 class="section-title">Kismet Blog</h2>
-                <div class="blog-grid">
-                    <article class="blog-preview">
-                        <div class="blog-image heart-hands"></div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="date">June 12, 2023</span>
-                                <span class="author">Emma Roberts</span>
-                                <span class="read-time">5 min read</span>
-                            </div>
-                            <h3><a href="#">Is This "The One"? 7 Signs You're Actually Compatible</a></h3>
-                            <p>Beyond butterflies and good conversations - here's how to know if they're relationship material.</p>
-                        </div>
-                    </article>
-                    
-                    <article class="blog-preview">
-                        <div class="blog-image couple-coffee"></div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="date">May 28, 2023</span>
-                                <span class="author">James Mitchell</span>
-                                <span class="read-time">4 min read</span>
-                            </div>
-                            <h3><a href="#">Marriage-Minded Conversations: What to Discuss Early On</a></h3>
-                            <p>How to have meaningful conversations about life goals, family values, and marriage expectations.</p>
-                        </div>
-                    </article>
-                    
-                    <article class="blog-preview">
-                        <div class="blog-image couple-walking"></div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="date">May 28, 2023</span>
-                                <span class="author">James Mitchell</span>
-                                <span class="read-time">4 min read</span>
-                            </div>
-                            <h3><a href="#">Building a Foundation for Marriage: Deep Connection Tips</a></h3>
-                            <p>How to build the emotional intimacy and trust that leads to successful, lasting marriages.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
         
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Find Your Future Mate?</h2>
-                    <p>Your life partner is here - It's someone<br>
-                    -  who shares your values<br>
-                    - is ready for a long-term relationship and commitment<br>
-                    - wants to build a beautiful future together<br>
-                    <br>
-                    Let's make it happen with Kismet!</p>
-                    <button class="cta-button">Book a Chat with Mala</button>
+                    <h2>Ready to meet your fate?</h2>
+                    <button class="cta-button small">Find Your Match</button>
                 </div>
             </div>
         </section>
@@ -281,33 +223,25 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+            <div class="footer-content-new">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Kismet Matchmaking Logo">
+                    </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#matchmaking">Matchmaking</a></li>
-                        <li><a href="#dating-coaching">Dating Coaching</a></li>
-                        <li><a href="#relationship-advice">Relationship Advice</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#referral">Refer Your Friend</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <div class="footer-content">
-                        <p class="contact">Contact: <a href="mailto:kismetloveus@gmail.com">kismetloveus@gmail.com</a></p>
-                        <p class="hashtags">#IntentionalDating #ModernLove #KismetMatchmaking</p>
-                        <p class="copyright">&copy; 2025 Kismet Matchmaking. All rights reserved.</p>
+                <div class="footer-right">
+                    <a href="privacy.html" class="privacy-button">Privacy & Security</a>
+                    <div class="social-links">
+                        <a href="https://instagram.com/kismetmatchmaking" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:kismetloveus@gmail.com" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
