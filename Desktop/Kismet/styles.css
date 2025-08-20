@@ -12,7 +12,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.7;
     color: #2c3e50;
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     overflow-x: hidden;
     padding-top: 0;
     margin-top: 0;
@@ -406,7 +406,7 @@ section:nth-child(even) {
 }
 
 section:nth-child(odd) {
-    background: #ffffff;
+    background: #f8f9fa;
 }
 
 .section-title {
@@ -428,41 +428,44 @@ section:nth-child(odd) {
 
 /* What We Do Section - Friending Spaces Style */
 .what-we-do {
-    background: #ffffff;
-    padding: 6rem 0;
+    background: #f8f9fa;
+    padding: 8rem 4rem;
     position: relative;
 }
 
-.what-we-do-intro {
-    font-size: 1.2rem;
+.what-we-do-intro-large {
+    font-size: 2.2rem;
     color: #2c3e50;
-    text-align: center;
-    margin-bottom: 0.5rem;
-    max-width: 700px;
+    text-align: left;
+    margin-bottom: 6rem;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.6;
-    font-weight: 300;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.01em;
 }
 
-.what-we-do-subtitle {
-    font-size: 1.2rem;
+.what-we-do-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
     color: #2c3e50;
     text-align: center;
     margin-bottom: 4rem;
-    max-width: 800px;
+    letter-spacing: -0.01em;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.6;
-    font-weight: 300;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     margin-top: 3rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -473,7 +476,6 @@ section:nth-child(odd) {
     background: none;
     box-shadow: none;
     border: none;
-    border-bottom: 1px solid #e9ecef;
     padding-bottom: 1rem;
 }
 
@@ -494,9 +496,19 @@ section:nth-child(odd) {
     color: #d4a574;
 }
 
+.service-header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.service-icon {
+    flex-shrink: 0;
+}
+
 .service-item h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: #2c3e50;
     margin: 0;
@@ -510,16 +522,18 @@ section:nth-child(odd) {
 }
 
 .dropdown-arrow {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #6c757d;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: #8a9ba8;
     transition: all 0.3s ease;
     transform: rotate(0deg);
+    opacity: 0.7;
 }
 
 .dropdown-item.active .dropdown-arrow {
-    transform: rotate(45deg);
-    color: #d4a574;
+    transform: rotate(180deg);
+    color: #8a9ba8;
+    opacity: 1;
 }
 
 .service-content {
@@ -545,14 +559,14 @@ section:nth-child(odd) {
 /* Why Kismet Hero Section */
 .why-kismet-hero {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 4rem 0;
-    margin: 2rem 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://images.unsplash.com/photo-1521398679858-b02b2c1528f0?auto=format&fit=crop&w=1920&q=80') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 2rem 0;
+    margin: 1rem 0;
     position: relative;
-    min-height: 200px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -573,20 +587,19 @@ section:nth-child(odd) {
     color: #2c3e50;
     margin: 0;
     letter-spacing: -0.02em;
-    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 /* Professional Services Hero Section */
 .professional-services-hero {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://plus.unsplash.com/premium_photo-1723130232334-9631e2769521?auto=format&fit=crop&w=1920&q=80') !important;
+    background-size: cover !important;
+    background-position: center !important;
     background-repeat: no-repeat;
-    padding: 4rem 0;
-    margin: 2rem 0;
+    padding: 2rem 0;
+    margin: 1rem 0;
     position: relative;
-    min-height: 200px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -607,47 +620,13 @@ section:nth-child(odd) {
     color: #2c3e50;
     margin: 0;
     letter-spacing: -0.02em;
-    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
     padding: 0 2rem;
 }
 
 /* Comparison Section */
 .comparison-section {
-    background: #ffffff;
-    padding: 6rem 0;
-    position: relative;
-}
-
-.comparison-grid-new {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.comparison-column h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    font-weight: 300;
-    color: #2c3e50;
-    margin-bottom: 2rem;
-    letter-spacing: -0.01em;
-}
-
-.comparison-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.comparison-column li {
-    color: #2c3e50;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
-    padding-left: 0;
+    background: #f8f9fa;
+    padding: 8rem 0;
     position: relative;
 }
 
@@ -772,14 +751,13 @@ section:nth-child(odd) {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 .approach-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.8rem;
-    font-weight: 400;
+    font-weight: 300;
     color: #2c3e50;
     margin-bottom: 2.5rem;
     line-height: 1.2;
@@ -801,7 +779,7 @@ section:nth-child(odd) {
 
 /* Services Section */
 .services-section {
-    background: #ffffff;
+    background: #f8f9fa;
     padding: 8rem 0;
     position: relative;
 }
@@ -822,7 +800,7 @@ section:nth-child(odd) {
 .services-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.8rem;
-    font-weight: 400;
+    font-weight: 300;
     color: #2c3e50;
     margin-bottom: 2.5rem;
     line-height: 1.2;
@@ -866,9 +844,9 @@ section:nth-child(odd) {
 }
 
 .service-item-new strong {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #2c3e50;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
     font-family: 'Playfair Display', serif;
     transition: color 0.3s ease;
@@ -918,9 +896,8 @@ section:nth-child(odd) {
 
 .services-image img {
     width: 100%;
-    height: 500px;
+    height: 650px;
     object-fit: cover;
-    border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
@@ -944,14 +921,13 @@ section:nth-child(odd) {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 .application-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.8rem;
-    font-weight: 400;
+    font-weight: 300;
     color: #2c3e50;
     margin-bottom: 2.5rem;
     line-height: 1.2;
@@ -1198,7 +1174,6 @@ section:nth-child(odd) {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border-radius: 20px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -1568,7 +1543,7 @@ section:nth-child(odd) {
 .contact-item h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 300;
     color: #2c3e50;
     margin-bottom: 0.5rem;
 }
