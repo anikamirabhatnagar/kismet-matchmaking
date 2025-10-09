@@ -4,9 +4,9 @@
   "description": "Kismet Matchmaking Website",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve -s . -p $PORT"
+    "start": "serve -s . -p $PORT"
   },
-  "devDependencies": {
+  "dependencies": {
     "serve": "^14.2.1"
   }
 }
