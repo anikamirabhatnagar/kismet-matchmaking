@@ -1,11 +1,10 @@
 {
   "build": {
-    "builder": "RAILPACK",
-    "buildCommand": "npm install",
-    "watchPatterns": ["package.json", "server.js"]
+    "builder": "NIXPACKS",
+    "nixpacksConfigPath": "nixpacks.toml"
   },
   "deploy": {
-    "startCommand": "node server.js",
+    "startCommand": "npm run start",
     "healthcheckPath": "/health",
     "healthcheckTimeout": 100
   }
