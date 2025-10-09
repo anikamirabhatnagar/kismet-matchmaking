@@ -1,0 +1,18 @@
+# Force Railway to ignore static files for build detection
+# This prevents static site detection and forces Node.js detection
+*.html
+*.css
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.mp4
+*.mov
+*.pdf
+*.heic
+
+# Keep Node.js files for detection
+!package.json
+!server.js
+!railway.json

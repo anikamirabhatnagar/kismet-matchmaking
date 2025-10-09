@@ -1,9 +1,12 @@
 {
   "build": {
     "builder": "RAILPACK",
-    "buildCommand": "npm install"
+    "buildCommand": "npm install",
+    "watchPatterns": ["package.json", "server.js"]
   },
   "deploy": {
-    "startCommand": "node server.js"
+    "startCommand": "node server.js",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 100
   }
 }
