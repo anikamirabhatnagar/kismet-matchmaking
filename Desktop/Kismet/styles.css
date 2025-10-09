@@ -434,7 +434,7 @@ section:nth-child(odd) {
 }
 
 .what-we-do-intro-large {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: #2c3e50;
     text-align: left;
     margin-bottom: 6rem;
@@ -559,7 +559,7 @@ section:nth-child(odd) {
 /* Why Kismet Hero Section */
 .why-kismet-hero {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://images.unsplash.com/photo-1521398679858-b02b2c1528f0?auto=format&fit=crop&w=1920&q=80') !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('yellow-flowers-bg.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -592,7 +592,7 @@ section:nth-child(odd) {
 /* Professional Services Hero Section */
 .professional-services-hero {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://plus.unsplash.com/premium_photo-1723130232334-9631e2769521?auto=format&fit=crop&w=1920&q=80') !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('couple-ocean-sunset-bg.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat;
@@ -1213,16 +1213,18 @@ section:nth-child(odd) {
 
 /* CTA Section */
 .cta-section {
-    background: #f8f9fa;
-    padding: 4rem 0;
-    margin: 2rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('montse-monmo-TRMLSoaqXh8-unsplash.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 6rem 0;
+    margin: 0;
     position: relative;
-    min-height: 200px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: 1px solid #e9ecef;
     text-align: center;
 }
 
@@ -1235,11 +1237,11 @@ section:nth-child(odd) {
 .cta-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
-    font-weight: 300;
-    color: #2c3e50;
+    font-weight: 200;
+    color: white;
     margin: 0 0 1.5rem 0;
-    letter-spacing: -0.02em;
-    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.1em;
+    text-shadow: none;
 }
 
 .cta-content p {
