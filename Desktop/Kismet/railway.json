@@ -1,8 +1,4 @@
 {
-  "build": {
-    "builder": "NIXPACKS",
-    "nixpacksConfigPath": "nixpacks.toml"
-  },
   "deploy": {
     "startCommand": "npm run start",
     "healthcheckPath": "/health",
