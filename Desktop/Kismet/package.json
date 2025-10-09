@@ -1,0 +1,12 @@
+{
+  "name": "kismet-matchmaking",
+  "version": "1.0.0",
+  "description": "Kismet Matchmaking Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -p $PORT"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
