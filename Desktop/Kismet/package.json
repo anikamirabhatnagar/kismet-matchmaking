@@ -2,11 +2,14 @@
   "name": "kismet-matchmaking",
   "version": "1.0.0",
   "description": "Kismet Matchmaking Website",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "start": "serve -s . -p $PORT"
+    "start": "node server.js"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
