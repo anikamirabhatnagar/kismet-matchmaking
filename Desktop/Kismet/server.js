@@ -23,5 +23,5 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Kismet Express Server is running on port ${PORT}`);
   console.log(`📁 Serving static files from: ${path.join(__dirname, 'public')}`);
   console.log(`❤️ Health check available at /health`);
-  console.log(`🔄 Deployment timestamp: ${new Date().toISOString()}`);
+  console.log(`🔄 Vercel deployment timestamp: ${new Date().toISOString()}`);
 });
