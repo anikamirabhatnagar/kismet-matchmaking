@@ -3,8 +3,8 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from current directory
-app.use(express.static(__dirname));
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -16,12 +16,12 @@ app.get('/health', (req, res) => {
 
 // Handle SPA routing - serve index.html for all other routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Kismet Express Server is running on port ${PORT}`);
-  console.log(`📁 Serving static files from: ${__dirname}`);
+  console.log(`📁 Serving static files from: ${path.join(__dirname, 'public')}`);
   console.log(`❤️ Health check available at /health`);
   console.log(`🔄 Deployment timestamp: ${new Date().toISOString()}`);
 });
