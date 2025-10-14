@@ -24,4 +24,5 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`📁 Serving static files from: ${path.join(__dirname, 'public')}`);
   console.log(`❤️ Health check available at /health`);
   console.log(`🔄 Vercel deployment timestamp: ${new Date().toISOString()}`);
+  console.log(`📱 Image cropping fix deployed: -65% translateY`);
 });
