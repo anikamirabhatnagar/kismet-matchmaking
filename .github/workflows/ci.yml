@@ -1,0 +1,10 @@
+- name: Create package-lock in runner (if missing)
+  working-directory: kismet-annika
+  run: |
+    if [ ! -f package-lock.json ]; then
+      echo "Creating package-lock.json in runner"
+      npm i --package-lock-only
+    fi
+- name: Install dependencies
+  working-directory: kismet-annika
+  run: npm ci
