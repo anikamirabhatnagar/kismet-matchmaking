@@ -421,7 +421,7 @@
     </div>
 
     <!-- Hidden iframe for Google Forms submission -->
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {alert('Thank you for your application! We will be in touch soon.'); closeSignupForm(); document.getElementById('signupForm').reset();}"></iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(typeof submitted !== 'undefined' && submitted) {alert('Thank you for your application! We will be in touch soon.'); closeSignupForm(); document.getElementById('signupForm').reset();}"></iframe>
 
     <script>
         var submitted = false;
@@ -513,9 +513,6 @@
             currentSlide = 1;
             document.getElementById('slideContainer').style.transform = 'translateX(-50%)';
         }
-        
-        // Initialize on page load
-        document.addEventListener('DOMContentLoaded', handleComparisonScroll);
     </script>
 </body>
 </html>
