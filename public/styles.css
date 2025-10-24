@@ -1417,6 +1417,7 @@ section:nth-child(odd) {
 .social-link svg {
     width: 20px;
     height: 20px;
+    pointer-events: none;
 }
 
 /* Privacy Policy Page */
