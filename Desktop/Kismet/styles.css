@@ -326,10 +326,10 @@ main {
 /* Definition Card */
 section.definition-card {
     background: linear-gradient(135deg, #fff9f3 0%, #fef7f0 50%, #fff9f3 100%) !important;
-    padding: 4rem 2rem !important;
+    padding: 3rem 2rem !important;
     border: 3px solid #d4a574 !important;
     border-radius: 20px;
-    margin: 4rem auto !important;
+    margin: 3rem auto !important;
     max-width: 1200px;
     position: relative;
     box-shadow: 0 20px 50px rgba(212, 165, 116, 0.25) !important;
@@ -393,7 +393,7 @@ section.definition-card {
 
 /* Sections */
 section {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
     position: relative;
 }
 
@@ -429,7 +429,7 @@ section:nth-child(odd) {
 /* What We Do Section - Friending Spaces Style */
 .what-we-do {
     background: #f8f9fa;
-    padding: 8rem 4rem;
+    padding: 5rem 4rem;
     position: relative;
 }
 
@@ -453,7 +453,7 @@ section:nth-child(odd) {
     font-weight: 600;
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     letter-spacing: -0.01em;
     max-width: 1200px;
     margin-left: auto;
@@ -980,7 +980,7 @@ section:nth-child(odd) {
 
 .services-intro {
     max-width: 900px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 3rem;
     text-align: center;
 }
 
@@ -992,7 +992,7 @@ section:nth-child(odd) {
 }
 
 .service-highlights {
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .service-highlights h3 {
@@ -1125,7 +1125,7 @@ section:nth-child(odd) {
 /* Our Story */
 .our-story {
     background: #f8f9fa;
-    padding: 4rem 0 6rem 0;
+    padding: 3rem 0 4rem 0;
 }
 
 .story-content {
@@ -1861,7 +1861,7 @@ section:nth-child(odd) {
     }
     
     .page-hero {
-        padding: 4rem 0 3rem;
+        padding: 3rem 0 2rem;
     }
     
     .cta-button {
@@ -1893,7 +1893,7 @@ section:nth-child(odd) {
     .approach-section,
     .services-section,
     .application-section {
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
     
     .approach-text h2,

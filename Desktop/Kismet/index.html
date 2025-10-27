@@ -121,15 +121,15 @@
 
         <section class="comparison-section">
             <div class="container">
-                <div class="comparison-demo" style="max-width: 800px; margin: 0 auto; padding: 4rem 0;">
+                <div class="comparison-demo" style="max-width: 800px; margin: 0 auto; padding: 2.5rem 0;">
                     <div class="tab-interface">
-                        <div class="tab-header" style="display: flex; margin-bottom: 3rem;">
+                        <div class="tab-header" style="display: flex; margin-bottom: 2rem;">
                             <button class="tab-btn active-tab" onclick="showTab('problem-tab', this)" style="flex: 1; padding: 1.5rem 2rem; border: none; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; background: #d4a574; color: white; font-weight: 300;">Dating Apps</button>
                             <button class="tab-btn" onclick="showTab('solution-tab', this)" style="flex: 1; padding: 1.5rem 2rem; border: none; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; background: transparent; color: #2c3e50; font-weight: 300; border: 2px solid #d4a574;">The Kismet Difference</button>
                         </div>
                         
                         <div id="problem-tab" class="tab-panel" style="display: block; text-align: center;">
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 3rem; color: #2c3e50; font-weight: 300;">Dating Apps</h3>
+                            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 2rem; color: #2c3e50; font-weight: 300;">Dating Apps</h3>
                             <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; text-align: left;">
                                 <li style="margin-bottom: 2rem; padding-left: 2.5rem; position: relative; color: #2c3e50; font-size: 1.2rem; line-height: 1.8;">
                                     <span style="position: absolute; left: 0; color: #2c3e50; font-size: 1.8rem; top: -0.3rem; font-weight: bold;">•</span>
@@ -155,7 +155,7 @@
                         </div>
                         
                         <div id="solution-tab" class="tab-panel" style="display: none; text-align: center;">
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 3rem; color: #2c3e50; font-weight: 300;">The Kismet Difference</h3>
+                            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 2rem; color: #2c3e50; font-weight: 300;">The Kismet Difference</h3>
                             <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; text-align: left;">
                                 <li style="margin-bottom: 2rem; padding-left: 2.5rem; position: relative; color: #2c3e50; font-size: 1.2rem; line-height: 1.8;">
                                     <span style="position: absolute; left: 0; color: #2c3e50; font-size: 1.8rem; top: -0.3rem; font-weight: bold;">•</span>
@@ -490,10 +490,25 @@
                 btn.classList.remove('active-tab');
                 btn.style.background = '#f8f9fa';
                 btn.style.color = '#2c3e50';
+                btn.style.border = '2px solid #d4a574';
             });
             button.classList.add('active-tab');
             button.style.background = '#d4a574';
             button.style.color = 'white';
+            button.style.border = '2px solid #d4a574';
+            
+            // Add border to Dating Apps tab when Kismet Difference is clicked
+            if (tabId === 'solution-tab') {
+                // Find the Dating Apps button and add border
+                const datingAppsBtn = document.querySelector('.tab-btn:first-child');
+                datingAppsBtn.style.border = '3px solid #d4a574';
+                datingAppsBtn.style.boxShadow = '0 0 10px rgba(212, 165, 116, 0.3)';
+            } else {
+                // Remove special border from Dating Apps when it's clicked
+                const datingAppsBtn = document.querySelector('.tab-btn:first-child');
+                datingAppsBtn.style.border = '2px solid #d4a574';
+                datingAppsBtn.style.boxShadow = 'none';
+            }
             
             // Show/hide tab content
             document.querySelectorAll('.tab-panel').forEach(panel => {
